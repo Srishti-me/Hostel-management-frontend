@@ -201,7 +201,7 @@
 
           try {
             const response = await fetch(
-              "http://localhost:3000/api/update_fee",
+              "https://hostel-managemnet-backend.vercel.app/api/update_fee",
               {
                 method: "POST",
                 headers: {
@@ -227,7 +227,7 @@
       // Function to fetch and populate fee data into the table
       async function fetchAndPopulateFeeData() {
         try {
-          const response = await fetch("http://localhost:3000/api/get_fee");
+          const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/get_fee");
           if (!response.ok) {
             throw new Error("Failed to fetch fee data");
           }

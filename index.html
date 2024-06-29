@@ -876,7 +876,7 @@
       // Function to fetch and update hostel strength
       async function updateHostelStrength() {
         try {
-          const response = await fetch("http://localhost:3000/api/students");
+          const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/students");
           if (!response.ok) {
             throw new Error("Failed to fetch students data");
           }
@@ -891,7 +891,7 @@
       // Function to fetch and update number of students outside hostel
       async function updateStudentsOutside() {
         try {
-          const response = await fetch("http://localhost:3000/api/students");
+          const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/students");
           if (!response.ok) {
             throw new Error("Failed to fetch students data");
           }
@@ -916,7 +916,7 @@
       updateHostelStrength();
       updateStudentsOutside();
 
-      fetch("http://localhost:3000/api/logs")
+      fetch("https://hostel-managemnet-backend.vercel.app/api/logs")
         .then((response) => response.json())
         .then((entryExitRecords) => {
           const entryExitTableBody =
@@ -957,7 +957,7 @@
 
           try {
             const response = await fetch(
-              "http://localhost:3000/api/mark_entry",
+              "https://hostel-managemnet-backend.vercel.app/api/mark_entry",
               {
                 method: "POST",
                 headers: {
@@ -996,7 +996,7 @@
         });
 
       async function markEntry(studentId) {
-        const response = await fetch("http://localhost:3000/api/mark_entry", {
+        const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/mark_entry", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -1007,7 +1007,7 @@
       }
 
       async function markExit(studentId) {
-        const response = await fetch("http://localhost:3000/api/mark_exit", {
+        const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/mark_exit", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
