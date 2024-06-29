@@ -563,7 +563,7 @@
           console.log(Object.fromEntries(formData));
 
           try {
-            const response = await fetch("http://localhost:3000/api/students", {
+            const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/students", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -589,7 +589,7 @@
       // Function to fetch data and populate the table
       async function fetchStudentsAndPopulateTable() {
         try {
-          const response = await fetch("http://localhost:3000/api/students");
+          const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/students");
           if (!response.ok) {
             throw new Error("Failed to fetch data");
           }
