@@ -539,7 +539,7 @@
       // Function to fetch data and populate table
       async function fetchDataAndPopulateTable() {
         try {
-          const response = await fetch("http://localhost:3000/api/allotment");
+          const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/allotment");
           if (!response.ok) {
             throw new Error("Failed to fetch data");
           }
@@ -579,7 +579,7 @@
 
           try {
             const response = await fetch(
-              "http://localhost:3000/api/allotment",
+              "https://hostel-managemnet-backend.vercel.app/api/allotment",
               {
                 method: "POST",
                 headers: {

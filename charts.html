@@ -195,7 +195,7 @@
 
       async function markEntry() {
         var studentId = document.getElementById("studentId").value;
-        var endpoint = "http://localhost:3000/api/mark_entry";
+        var endpoint = "https://hostel-managemnet-backend.vercel.app/api/mark_entry";
         var data = {
           student_id: studentId,
         };
@@ -223,7 +223,7 @@
 
       async function markExit() {
         var studentId = document.getElementById("studentId").value;
-        var endpoint = "http://localhost:3000/api/mark_exit";
+        var endpoint = "https://hostel-managemnet-backend.vercel.app/api/mark_exit";
         var data = {
           student_id: studentId,
         };

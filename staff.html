@@ -222,7 +222,7 @@
           const formData = new FormData(form);
 
           try {
-            const response = await fetch("http://localhost:3000/api/staff", {
+            const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/staff", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -246,7 +246,7 @@
       // Function to fetch staff data
       async function fetchStaffData() {
         try {
-          const response = await fetch("http://localhost:3000/api/staff");
+          const response = await fetch("https://hostel-managemnet-backend.vercel.app/api/staff");
           console.log("response", response);
 
           if (!response.ok) {
